@@ -8,6 +8,9 @@ function App() {
   return (
     <div className="App">
      <PlayComp/>
+     <div>
+      
+     </div>
     </div>
   );
 }
