@@ -1,6 +1,109 @@
 .container{
   margin:0,auto;
-
-  width:400px;
-  height:500px;
+  width:350px;
+  height:600px;
+  padding: 20px;
+  /* border: 1px solid black; */
+  background-color: rgb(92, 88, 88);
+  display: flex;
+  flex-direction: column;
+  
+  box-shadow: 0px 0px 10px 0px rgb(223, 221, 221) ;  
+  border-radius: 10px;
+  background-color: #ffff;
+ 
 }
+
+
+.image-container{
+  width:250px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+  height:240px;
+  align-self: center;
+  border-radius: 20%;
+  box-shadow:0px 0px 10px 0px rgb(215, 213, 213);
+  background-image:url('../../../public/image/images.png') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateZ('45deg');
+}
+
+.audio-container{
+  background-color: aqua;
+  width: 50px;
+}
+
+.controlsA{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.changeprev {
+  width: 50px;
+  height:50px;
+  appearance: none;
+  background-color: transparent;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  
+  
+}
+
+.first-img{
+  object-fit: cover;
+  background-color: transparent;
+  font-size: 50px;
+  width:50px;
+  color: aqua;
+}
+
+.controlsB{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.littlecontrols{
+  background-color: transparent;
+  margin-left: 15px;
+  margin-right: 15px;
+  
+
+  & .littlecon{
+    
+    color: pink;
+    
+  }
+
+
+  &.littecons{
+    background-color: transparent;
+    fill:red;
+  }
+}
+
+.checkbox-input {
+  display: none;
+}
+
+/* Style the custom checkbox */
+.custom-checkbox {
+  width: 24px; /* Set the desired width for your custom checkbox */
+  height: 24px; /* Set the desired height for your custom checkbox */
+  background-image: url('../../imagessvg/repeat_FILL0_wght400_GRAD0_opsz24.svg'); /* URL to the unchecked image */
+  background-size: cover; /* Adjust to fit the image size */
+  cursor: pointer; /* Show a pointer cursor on hover */
+
+  /* Define the checked state */
+  &.checked {
+    background-image: url('../../imagessvg/repeat_one_black_24dp.svg'); /* URL to the checked image */
+  }
+}
+

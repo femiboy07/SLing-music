@@ -73,6 +73,10 @@ export const songsSlice=createSlice({
       replaySong:(state,action:PayloadAction<number>):void=>{
          state.currentSongIndex=action.payload
 
+      },
+
+      updateCurrentSongIndex:(state,action:PayloadAction<number>)=>{
+            state.currentSongIndex=action.payload;
       }
     },
 
@@ -89,6 +93,6 @@ export const songsSlice=createSlice({
     }
 })
 
-export const {playCurrentSong,changeSong,replaySong}= songsSlice.actions
+export const {playCurrentSong,changeSong,replaySong,updateCurrentSongIndex}= songsSlice.actions
 
 export default songsSlice.reducer;

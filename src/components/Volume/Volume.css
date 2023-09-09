@@ -1,24 +1,28 @@
-.slider-container{
+.volume-container{
     width:100%;
     /* border:2px solid black; */
     height:50px;
     position: relative;
-    margin: 0 auto;
-    padding-left: 50px;
+    /* margin: 0 auto;
+    padding-left: 50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
    
     
 
 }
 
 
-.slider-track{
+.vol-track{
     position: absolute;
     top:50%;
     left:0;
     right:0;
-   
     bottom:0;
     transform: translateY(-50%);
+    margin-left: 20px;
+    margin-right: 20px;
     background: linear-gradient(
     to right, 
     red 0%, /* Start with red color at 0% */
@@ -27,44 +31,49 @@
     height: 4px;
     border-radius: 5px;
     z-index: 1;
-    /* --track-background:'red'; */
+    
 }
 
 
 
-.slider-track::before{
+.vol-track::before{
     position: absolute;
+    display: flex;
     content:"";
-    top:50%;
-    left:0;
+    top:0%;
+    left:50%;
     right:0;
     bottom:0;
     z-index: 1;
-    transform: translateY(-50%);
+    transform: translateX(-0%);
     background-color:var(--track-background);
     height: 4px;
+    /* background-image: url('../../imagessvg//volume_down_black_24dp.svg'); */
+    width: 20px;
+    height: 20px;
+    /* margin-left: 10px; */
+    
     /* width:50%; */
     
     border-radius: 5px;
 }
 
 
+ 
 
-
-.slider-thumb{
+.vol-thumb{
     position: absolute;
     width: 15px;
     height:15px;
     background-color:rgb(244, 161, 175);
     border-radius: 50px;
     top:50%;
-    left:30%;
+    margin-left: 20px;
+    
+    left:0;
     z-index: 3;
     right:0;
     bottom:0;
     transform: translateY(-50%);
-     /* margin-left: -10px; */
-
-
-
-}
+    
+} 
